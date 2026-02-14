@@ -1,9 +1,7 @@
 import React, { useState, useCallback, useEffect } from 'react';
 import { AppState } from './types';
 import { ROMANTIC_QUOTES, QUESTION_STEPS, INITIAL_GIF, SUCCESS_GIF, CELEBRATION_GIF } from './constants';
-import Confetti from './components/Confetti';
 import AdminDashboard from './components/AdminDashboard';
-import { sounds } from './utils/sounds';
 import { tracker } from './utils/tracker';
 
 const App: React.FC = () => {
