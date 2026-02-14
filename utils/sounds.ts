@@ -12,5 +12,4 @@ const sounds = {
         // logic to play background music
     }
 };
-
-export default sounds;
+import sounds from './utils/sounds'; // ✅ Correct!
