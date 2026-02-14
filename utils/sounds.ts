@@ -1,4 +1,4 @@
-export const sounds = {...}
+export const sounds = {
     playNo: function() {
         // logic to play "no" sound
     },
@@ -12,4 +12,4 @@ export const sounds = {...}
         // logic to play background music
     }
 };
-import sounds from "./utils/orangery-coniferous-forest-142569"; // ✅ Correct!
+import sounds from './utils/sounds'; // ✅ Correct!
