@@ -1,4 +1,4 @@
-const sounds = {
+export const sounds = {...}
     playNo: function() {
         // logic to play "no" sound
     },
