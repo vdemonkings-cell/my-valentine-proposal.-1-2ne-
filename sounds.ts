@@ -1,6 +1,5 @@
 
-import { ROMANTIC_TUNE_URL } from '.Sound Effect by <a href="https://pixabay.com/users/prettyjohn1-54616349/?utm_source=link-attribution&utm_medium=referral&utm_campaign=music&utm_content=483360">prettyjohn1</a> from <a href="https://pixabay.com/sound-effects//?utm_source=link-attribution&utm_medium=referral&utm_campaign=music&utm_content=483360">Pixabay</a>./constants';
-
+import { ROMANTIC_TUNE_URL } from '../constants';
 export class SoundManager {
   private ctx: AudioContext | null = null;
   private backgroundAudio: HTMLAudioElement | null = null;
