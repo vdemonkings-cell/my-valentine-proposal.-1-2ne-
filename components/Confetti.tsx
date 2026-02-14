@@ -1,1 +1,21 @@
-import React, { useEffect, useRef } from 'react';\n\nconst Confetti: React.FC = () => {\n    const canvasRef = useRef<HTMLCanvasElement | null>(null);\n\n    useEffect(() => {\n        const canvas = canvasRef.current;\n        if (!canvas) return;\n\n        const context = canvas.getContext('2d');\n        if (!context) return;\n        // Your drawing logic here\n    }, []);\n\n    return <canvas ref={canvasRef} />;\n};\n\nexport default Confetti;
+import React from 'react';
+import Confetti from 'react-confetti';
+
+const ConfettiComponent: React.FC = () => {
+    const [width, setWidth] = React.useState(window.innerWidth);
+    const [height, setHeight] = React.useState(window.innerHeight);
+
+    React.useEffect(() => {
+        const handleResize = () => {
+            setWidth(window.innerWidth);
+            setHeight(window.innerHeight);
+        };
+
+        window.addEventListener('resize', handleResize);
+        return () => window.removeEventListener('resize', handleResize);
+    }, []);
+
+    return <Confetti width={width} height={height} />;
+};
+
+export default ConfettiComponent;
